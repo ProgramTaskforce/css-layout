@@ -5,38 +5,26 @@
 .container {
     border: 4px solid lightgray;
     padding: 24px 24px 0 24px;
-}
-
-.row {
-    width: 100%;                           
-    max-width: 300px;
-    /* die width 100% sind hier sehr
-    wichtig, damit es responsive bleibt, 
-    und nicht hard-code 600px */
-    margin: 0 auto;
-    /* margin 0 auto zum centern benutzen
-    bei rows mit max width, alternativ 
-    könnte man das auch weg lassen und im
-    .container justify-content: center */
-}
-
-.title {
-    border: 2px solid lightgray;
-    width: 100%;
-    height: 24px;
-    margin-bottom: 24px;
-    
+    display: flex;
+    justify-content: space-between;
 }
 
 .box {
     border: 4px solid lightgray;
-    width: 30%;
-    height: 100px;
     margin-bottom: 24px;
 }
 
+.box-small {
+    height: 50px;
+}
+
 .box-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    width: 48%; 
+    /* display: flex;
+    flex-direction: column; sind hier nicht 
+    nötig, da es sich von alleine so aufreiht */
+}
+
+.box-large {
+    width: 48%;
 }
